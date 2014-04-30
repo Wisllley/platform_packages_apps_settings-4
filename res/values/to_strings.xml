@@ -85,4 +85,7 @@
     <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
     <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
 
+    <!-- Bluetooth accept all files -->
+    <string name="bluetooth_accept_all_files">Accept all file types</string>
+
 </resources>
