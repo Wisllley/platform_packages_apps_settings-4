@@ -29,4 +29,7 @@
     <string name="tentacles_title">Tentacles</string>
     <string name="header_category_tentacles">Customization</string>
 
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+
 </resources>
