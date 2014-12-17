@@ -27,4 +27,7 @@
     <string name="build_date">Build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+
 </resources>
