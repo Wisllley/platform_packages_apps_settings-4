@@ -23,6 +23,7 @@
 -keep class com.android.settings.display.NightDisplaySettings
 -keep class com.android.settings.cyanogenmod.*Settings
 -keep class com.android.settings.preference.*
+-keep class com.android.settings.octos.**
 
 # Tentacles
 -keep class com.teamoctos.tentacles.**
