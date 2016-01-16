@@ -43,4 +43,8 @@
     <string name="tentacles_title">Tentacles</string>
     <string name="header_category_tentacles">Customization</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+
 </resources>
