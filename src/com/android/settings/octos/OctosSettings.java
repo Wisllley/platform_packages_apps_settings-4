@@ -41,7 +41,7 @@ public class OctosSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_HIDE_TENTACLE_ICON = "hide_tentacles_icon";
     private static final String SUPERSU_APP_PACKAGE = "eu.chainfire.supersu";
-    private static final String KERNELADIUTOR_APP_PACKAGE = "com.grarak.kerneladiutor";
+    private static final String KERNELADIUTOR_APP_PACKAGE = "com.kerneladiutor.mod";
 
     private SwitchPreference mHideTentaclesIcon;
 

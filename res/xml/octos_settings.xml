@@ -60,8 +60,8 @@
                 android:title="@string/kerneladiutor_title">
                 <intent
                     android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.grarak.kerneladiutor"
-                    android:targetClass="com.grarak.kerneladiutor.activities.MainActivity" />
+                    android:targetPackage="com.kerneladiutor.mod"
+                    android:targetClass="com.grarak.kerneladiutor.MainActivity" />
         </PreferenceScreen>
 
         <!-- Lock screen -->
