@@ -261,7 +261,7 @@
     <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
 
     <!-- KernelAdiutor -->
-    <string name="kerneladiutor_title">KernelAdiutor</string>
+    <string name="kerneladiutor_title">Kernel Adiutor-Mod</string>
 
     <!-- Network traffic -->
     <string name="traffic_category">Traffic Indicators</string>
