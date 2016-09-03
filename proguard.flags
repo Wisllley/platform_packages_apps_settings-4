@@ -24,6 +24,9 @@
 
 -keep class com.android.settings.cyanogenmod.*Settings
 
+# Tentacles
+-keep class com.teamoctos.tentacles.**
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);
