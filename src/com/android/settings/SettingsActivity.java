@@ -138,6 +138,10 @@ import com.android.settingslib.drawer.Tile;
 
 import java.net.URISyntaxException;
 import com.teamoctos.tentacles.Tentacles;
+import com.teamoctos.tentacles.fragments.FlingSettings;
+import com.teamoctos.tentacles.fragments.NavbarSettings;
+import com.teamoctos.tentacles.fragments.SmartbarSettings;
+import com.teamoctos.tentacles.fragments.PulseSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -372,7 +376,11 @@ public class SettingsActivity extends SettingsDrawerActivity
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
-            Tentacles.class.getName()
+            Tentacles.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
     };
 
 
