@@ -52,8 +52,6 @@ public class BootReceiver extends BroadcastReceiver {
 
         // Extract the contributors database
         ContributorsCloudFragment.extractContributorsCloudDatabase(ctx);
-
-        DevelopmentSettings.initializeUpdateRecoveryOption(ctx);
     }
 
     private boolean hasRestoredTunable(Context context) {

@@ -505,15 +505,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             removePreference(COLOR_TEMPERATURE_KEY);
             mColorTemperaturePreference = null;
         }
-
-        if (!getResources().getBoolean(R.bool.config_enableRecoveryUpdater)) {
-            removePreference(mUpdateRecovery);
-            mUpdateRecovery = null;
-            if (SystemProperties.getBoolean(UPDATE_RECOVERY_PROPERTY, false)) {
-                SystemProperties.set(UPDATE_RECOVERY_PROPERTY, "false");
-                pokeSystemProperties();
-            }
-        }
     }
 
     private ListPreference addListPreference(String prefKey) {
@@ -748,9 +739,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateUSBAudioOptions();
         updateRootAccessOptions();
         updateDevelopmentShortcutOptions();
-        if (mUpdateRecovery != null) {
-            updateUpdateRecoveryOptions();
-        }
         if (mColorTemperaturePreference != null) {
             updateColorTemperature();
         }
@@ -815,9 +803,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         resetAdbNotifyOptions();
         resetVerifyAppsOverUsbOptions();
         resetDevelopmentShortcutOptions();
-        if (mUpdateRecovery != null) {
-            resetUpdateRecoveryOptions();
-        }
         writeAnimationScaleOption(0, mWindowAnimationScale, null);
         writeAnimationScaleOption(1, mTransitionAnimationScale, null);
         writeAnimationScaleOption(2, mAnimatorDurationScale, null);
@@ -1822,31 +1807,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 .setCancelable(false)
                 .create()
                 .show();
-    }
-
-    private void updateUpdateRecoveryOptions() {
-        updateSwitchPreference(mUpdateRecovery, SystemProperties.getBoolean(
-                UPDATE_RECOVERY_PROPERTY, false));
-    }
-
-    private void writeUpdateRecoveryOptions() {
-        SystemProperties.set(UPDATE_RECOVERY_PROPERTY,
-                mUpdateRecovery.isChecked() ? "true" : "false");
-        pokeSystemProperties();
-    }
-
-    private static void resetUpdateRecoveryOptions() {
-        // User builds should update recovery by default
-        if ("user".equals(Build.TYPE)) {
-            SystemProperties.set(UPDATE_RECOVERY_PROPERTY, "true");
-        }
-    }
-
-    public static void initializeUpdateRecoveryOption(Context context) {
-        if (TextUtils.isEmpty(SystemProperties.get(UPDATE_RECOVERY_PROPERTY)) &&
-                context.getResources().getBoolean(R.bool.config_enableRecoveryUpdater)) {
-            resetUpdateRecoveryOptions();
-        }
     }
 
     @Override
