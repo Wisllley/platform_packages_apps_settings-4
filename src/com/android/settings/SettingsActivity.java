@@ -133,6 +133,7 @@ import com.android.settingslib.drawer.Tile;
 
 import java.net.URISyntaxException;
 import com.teamoctos.tentacles.Tentacles;
+import com.teamoctos.tentacles.fragments.ExpandedDesktop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -356,6 +357,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             MasterClear.class.getName(),
             NightDisplaySettings.class.getName(),
             Tentacles.class.getName(),
+            ExpandedDesktop.class.getName(),
     };
 
 
