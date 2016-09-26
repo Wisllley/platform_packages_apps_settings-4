@@ -160,4 +160,5 @@ public class Settings extends SettingsActivity {
     public static class PersonalSettings extends SettingsActivity { /* empty */ }
     public static class SystemSettings extends SettingsActivity { /* empty */ }
     public static class TentaclesActivity extends SettingsActivity { /* empty */ }
+    public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
 }
