@@ -35,7 +35,7 @@
         </PreferenceScreen>
 
         <!-- CyanogenMod Updates -->
-        <cyanogenmod.preference.SelfRemovingPreference android:key="cm_updates"
+<!--        <cyanogenmod.preference.SelfRemovingPreference android:key="cm_updates"
                 android:title="@string/cmupdate_settings_title"
                 android:summary="@string/system_update_settings_list_item_summary"
                 cm:requiresOwner="true"
@@ -43,7 +43,7 @@
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.cyanogenmod.updater"
                     android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
-        </cyanogenmod.preference.SelfRemovingPreference>
+        </cyanogenmod.preference.SelfRemovingPreference> -->
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
@@ -83,8 +83,8 @@
         </PreferenceScreen>
 
         <!-- Contributors cloud -->
-        <org.cyanogenmod.internal.cmparts.CMPartsPreference
-                android:key="contributors" />
+<!--        <org.cyanogenmod.internal.cmparts.CMPartsPreference
+                android:key="contributors" /> -->
 
         <!-- Device name -->
         <Preference android:key="device_name"
@@ -119,11 +119,11 @@
                 android:summary="@string/mod_version_default" />
 
         <!-- CyanogenMod API Version -->
-        <Preference android:key="mod_api_level"
+<!--        <Preference android:key="mod_api_level"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/mod_api_level"
-                android:summary="@string/mod_api_level_default" />
+                android:summary="@string/mod_api_level_default" /> -->
 
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
