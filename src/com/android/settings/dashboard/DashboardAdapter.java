@@ -19,6 +19,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
+import android.provider.Settings;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
@@ -105,14 +106,26 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         setShowingAll(showAll);
     }
 
-    public List<Tile> getSuggestions() {
-        return mSuggestions;
+     public List<Tile> getSuggestions() {
+        if ((Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.DISABLE_SUGGESTIONS, 0) == 1)) {
+             return null;
+        } else {
+             return mSuggestions;
+        }
     }
 
-    public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
+     public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
             List<Tile> suggestions) {
-        mSuggestions = suggestions;
         mCategories = categories;
+        if ((Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.DISABLE_SUGGESTIONS, 0) == 1)) {
+             mSuggestions = null;
+             recountItems();
+        } else {
+             mSuggestions = suggestions;
+             recountItems();
+        }
 
         TypedValue tintColorValue = new TypedValue();
         mContext.getResources().getValue(R.color.external_tile_icon_tint_color,
