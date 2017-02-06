@@ -108,22 +108,23 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
 
      public List<Tile> getSuggestions() {
         if ((Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.DISABLE_SUGGESTIONS, 0) == 1)) {
-             return null;
-        } else {
+                    Settings.System.DISABLE_SUGGESTIONS, 1) == 1)) {
              return mSuggestions;
+        } else {
+             return null;
         }
     }
 
-     public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
+    public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
             List<Tile> suggestions) {
         mCategories = categories;
+
         if ((Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.DISABLE_SUGGESTIONS, 0) == 1)) {
-             mSuggestions = null;
+                    Settings.System.DISABLE_SUGGESTIONS, 1) == 1)) {
+             mSuggestions = suggestions;
              recountItems();
         } else {
-             mSuggestions = suggestions;
+             mSuggestions = null;
              recountItems();
         }
 
