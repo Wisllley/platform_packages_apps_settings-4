@@ -12,13 +12,54 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  
     <!-- Manage applications: show substratum overlays -->
-    <string name="filter_substratum_icons">Icona Substratum sovrapposta</string>
-    <string name="menu_show_substratum_icons">Mostra l\'icona sovrapposta</string>
-    <string name="menu_hide_substratum_icons">Nascondi l\'icona sovrapposta</string>
+    <string name="filter_substratum_apps">Substratum overlays</string>
+    <string name="menu_show_substratum">Mostra overlays</string>
+    <string name="menu_hide_substratum">Nascondi overlays</string>
+  
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Icona Substratum overlays</string>
+    <string name="menu_show_substratum_icons">Mostra l\'icona overlays</string>
+    <string name="menu_hide_substratum_icons">Nascondi l\'icona overlays</string>
     
     <!-- Tentacles -->
     <string name="tentacles_title">Tentacles</string>
     <string name="header_category_tentacles">Personalizzazione</string>
 
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Livelli volume</string>
+    <string name="volume_steps_alarm_title">Livello volume: Sveglia</string>
+    <string name="volume_steps_dtmf_title">Livello volume: DTMF</string>
+    <string name="volume_steps_music_title">Livello volume: Musica</string>
+    <string name="volume_steps_notification_title">Livello volume: Notifiche</string>
+    <string name="volume_steps_ring_title">Livello volume: Suoneria</string>
+    <string name="volume_steps_system_title">Livello volume: Sistema</string>
+    <string name="volume_steps_voice_call_title">Livello volume: Chiamata</string>
+    <string name="volume_steps_reset">Ripristina</string>
+  
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Angoli di rotazione</string>
+    <string name="display_rotation_disabled">Disabilitato</string>
+    <string name="display_rotation_unit">gradi</string>
+    <string name="display_rotation_category_title">Rotazione</string>
+    <string name="display_rotation_0_title">0 gradi</string>
+    <string name="display_rotation_90_title">90 gradi</string>
+    <string name="display_rotation_180_title">180 gradi</string>
+    <string name="display_rotation_270_title">270 gradi</string>
+
+    <!-- Dashboard options -->
+    <string name="dashboard_category">Opzioni pannello impostazioni</string>
+    <string name="dashboard_suggestions_title">Suggerimenti</string>
+    <string name="summary_dashboard_suggestions_enabled">Suggerimenti pannello impostazioni abilitati</string>
+    <string name="summary_dashboard_suggestions_disabled">Suggerimenti pannello impostazioni disabilitati</string>
+    <string name="remove_tile_summaries_title">Riepilogo</string>
+    <string name="remove_tile_summaries_summary_enabled">Riepilogo pannello impostazioni abilitati</string>
+    <string name="remove_tile_summaries_summary_disabled">Riepilogo pannello impostazioni disabilitati</string>
+    <string name="dashboard_conditions_title">Condizioni</string>
+    <string name="summary_dashboard_conditions_enabled">Condizioni del pannello impostazioni sono abilitate</string>
+    <string name="summary_dashboard_conditions_disabled">Condizioni del pannello impostazioni sono disabilitati</string>
+    <string name="dashboard_columns_portrait_title">Colonne (verticale)</string>
+    <string name="dashboard_columns_landscape_title">Colonne (orizzontale)</string>
+  
 </resources>
